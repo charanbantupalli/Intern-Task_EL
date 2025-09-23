@@ -45,7 +45,7 @@ public class Main {
     private static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int choice;
-        while(true){
+        while (true) {
             System.out.println("\n--- Student Record Management System ---");
             System.out.println("1. Add Student");
             System.out.println("2. View Students");
@@ -55,12 +55,16 @@ public class Main {
             System.out.print("Choose an option: ");
             choice = sc.nextInt();
 
+            if(choice == 5){
+                System.out.println("Exit, Thank you!");
+                break;
+            }
+
             switch (choice) {
                 case 1: addStudent(); break;
                 case 2: viewStudents(); break;
                 case 3: updateStudent(); break;
                 case 4: deleteStudent(); break;
-                case 5: System.out.println("Exiting... Thank you!"); break;
                 default: System.out.println("Invalid choice. Try again!");
             }
         }
