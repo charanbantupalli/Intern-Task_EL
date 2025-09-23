@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class CAl {
     public static double addition(double a1, double b1){
         return a1 + b1;
